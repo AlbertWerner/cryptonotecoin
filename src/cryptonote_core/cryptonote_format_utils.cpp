@@ -631,11 +631,12 @@ namespace cryptonote
     blobdata txb = tx_to_blob(bl.miner_tx);
     std::string hex_tx_represent = string_tools::buff_to_hex_nodelimer(txb);
     std::cout << "Genesis coinbase tx hex: " << hex_tx_represent << std::endl;
+    return 0;
     */
 
     //hard code coinbase tx in genesis block, because "true" generating tx use random, but genesis should be always the same
     //TODO After you obtain hash of the genesis block put it here and recompile sources!
-    std::string genesis_coinbase_tx_hex = "";
+    std::string genesis_coinbase_tx_hex = "013c01ff0001ffffffffffffff01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101e339ffb62bc3b666bbb128cdac9716840337ab0e9da9e6a1a03d19438dc5a045";
 
     blobdata tx_bl;
     string_tools::parse_hexstr_to_binbuff(genesis_coinbase_tx_hex, tx_bl);
