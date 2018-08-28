@@ -67,8 +67,8 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 //TODO Put here the name of your currency
-const char     CRYPTONOTE_NAME[]                             = "cryptonotecoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffffffff01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121018dde8364da9a693064bafa339e6aab21df3147e986a78050c340a336e1fb1091";
+const char     CRYPTONOTE_NAME[]                             = "Betcoin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -101,8 +101,6 @@ const unsigned THREAD_STACK_SIZE                             = 5 * 1024 * 1024;
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  "185.24.234.66:18989",
-  "185.24.233.229:18989",
 };
 
 struct CheckpointData {
